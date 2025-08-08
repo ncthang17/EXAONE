@@ -1,4 +1,8 @@
 *한국어로 readme_kr.md 파일 참고 부탁드립니다.*
+
+*The execution code can be found at this [link](https://colab.research.google.com/drive/1sTKJxoWf-vgSdFtm-uJjXToL3xIYvc8G?usp=sharing) or refer to "test_llm.py".*
+
+***Disclaimer***: It is based on my personal evaluation based on responses to the following six prompts. So the results might not be comprehensive, totally correct, and subjected to bias.
 # Introduction
 To evaluate the performance of the EXAONE 4.0 (1.2B) model on the provided response, I'll assess the responses using a comprehensive set of criteria: accuracy, completeness, clarity, relevance, language appropriateness, and latency. 
 
