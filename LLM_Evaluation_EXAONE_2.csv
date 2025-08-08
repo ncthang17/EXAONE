@@ -1,0 +1,167 @@
+ID,Prompt,Category,Response,Latency (s)
+1,What is the capital of Canada?,Factual,"
+What is the capital of Canada?
+
+<think>
+
+</think>
+
+The capital of Canada is **Ottawa**. It was established as the capital in 1857 and is located in northern Ontario. Ottawa is also the political and cultural center of Canada and hosts many national events, including the Canadian Parliament and the Parliament Hill celebrations.",32.15
+2,"If a car travels at 60 km/h for 2.5 hours, how far did it go?",Reasoning,"
+If a car travels at 60 km/h for 2.5 hours, how far did it go?
+
+<think>
+
+</think>
+
+To determine the distance the car traveled, we can use the formula:
+
+\[
+\text{Distance} = \text{Speed} \times \text{Time}
+\]
+
+**Given:**
+- **Speed (S)** = 60 km/h
+- **Time (T)** = 2.5 hours
+
+**Step-by-Step Solution:**
+
+1. **Multiply the speed by the time:**
+   
+   \[
+   \text{Distance} = 60 \, \text{km/h} \times 2.5 \, \text{hours}
+   \]
+
+2. **Calculate the product:**
+   
+   \[
+   60 \times 2.5 = 150
+   \]
+
+3. **Include the units:**
+   
+   Since the speed is in kilometers per hour and the time is in hours, the distance will be in kilometers.
+
+**Final Answer:**
+
+\[
+\boxed{150 \text{ km}}
+\]",121.86
+3,Why is the sky blue?,Scientific,"
+Why is the sky blue?
+
+<think>
+
+</think>
+
+The sky appears blue due to a phenomenon called **Rayleigh scattering**, which explains how sunlight interacts with Earth's atmosphere. Here's a step-by-step breakdown:
+
+### 1. **Sunlight Composition**  
+   - Sunlight is made up of all colors of the visible spectrum (red, orange, yellow, green, blue, indigo, violet).
+
+### 2. **Interaction with Air Molecules**  
+   - When sunlight enters Earth's atmosphere, it travels through layers of air containing nitrogen (~78%) and oxygen (~21%). These molecules are much smaller than the wavelength of visible light.
+
+### 3. **Scattering Mechanism (Rayleigh Scattering)**  
+   - Shorter wavelengths (blue/violet light) are scattered much more efficiently than longer wavelengths (red/orange) because scattering intensity is proportional to \( \frac{1}{\lambda^4} \), where \( \lambda \) is the wavelength.  
+   - Blue light (around 450–495 nm) gets scattered in all directions by air molecules, making the sky appear blue to our eyes from all over the planet.
+
+### 4. **Why Not Violet?**  
+   - Although violet light (shorter than blue) scatters even more strongly, our eyes are less sensitive to violet, and some of it is absorbed by the upper atmosphere. This is why we see mostly blue skies.
+
+### 5. **Daytime vs. Sunset/Sunrise**  
+   - At sunrise/sunset, sunlight passes through more atmosphere, scattering away most blue light and leaving longer wavelengths (red/orange) to dominate.
+
+### Fun Fact:  
+The reason the sky isn’t uniformly blue everywhere is due to Earth’s rotation and atmospheric density variations. Near the poles, you might see whitish or hazy skies because sunlight travels a longer path through the atmosphere.
+
+Would you like details on other colors in the sky (like pink hues at high altitudes)?",232.8
+4,Write a short story about a dragon who learns to cook.,Creative,"
+Write a short story about a dragon who learns to cook.
+
+<think>
+
+</think>
+
+**The Dragon’s Kitchen**  
+
+Old Thoran the Dragon had spent his life basking in the sun, soaring across kingdoms, and hoarding gold. But one evening, while exploring the ruins of an abandoned granary, he found something strange—a small, iron skillet covered in strange symbols.  
+
+Curious, Thoran picked it up. The metal was cold, and the spices inside smelled like fire and mystery. Intrigued, he lifted it to his lips. A sharp taste burst through—sweet, smoky, alive. He swallowed it whole.  
+
+At first, his wings trembled with unease. The heat was too strong, and his scales burned. But when he tried to cook an egg, it cooked perfectly—golden and crisp. When he stirred a pot of stew, the aroma filled his lungs like warmth.  
+
+Soon, his people marveled at how he could stir flames into golden sauce or turn bitter herbs into something sweet. Even his own kin stopped asking why he didn’t just grow more fire.  
+
+Thoran smiled. Some dragons weren’t meant to burn—just cook.",125.22
+5,Explain gravity in Korean.,Multilingual,"
+Explain gravity in Korean.
+
+<think>
+
+</think>
+
+중력은 질량을 가진 물체 사이에 작용하는 힘으로, 지구와 같은 큰 물체 주변에서 물체가 아래로 pulled되는 현상을 말합니다. 뉴턴의 만유인력 법칙에 따라 중력의 크기는 질량과 거리의 제곱에 비례하며, 물체의 모양이나 크기와는 무관합니다. 예를 들어, 달은 지구의 중력에 의해 공전하죠! 🌍✨",45.67
+6,List 3 benefits of regular exercise.,Instruction,"
+List 3 benefits of regular exercise.
+
+<think>
+
+</think>
+
+Here are three key benefits of regular exercise:  
+
+1. **Improved Cardiovascular Health** – Helps strengthen the heart, lower blood pressure, and reduce the risk of heart disease.  
+2. **Weight Management** – Supports metabolism, burns calories, and helps maintain a healthy weight.  
+3. **Mental Health Boost** – Reduces stress, anxiety, and depression while promoting endorphin release (the ""feel-good"" chemicals).  
+
+Would you like additional benefits or details?",54.84
+7,Translate 'I love you' into French.,Multilingual,"
+Translate 'I love you' into French.
+
+<think>
+
+</think>
+
+The translation of ""I love you"" into French is:  
+
+**""Je t'aime""** (for a male speaker)  
+or  
+**""Je vous aime""** (for a female speaker).  
+
+It can also be expressed as:  
+- **""Je vous prie d'amour""** (literally ""I beg you love me"")  
+- **""Je vous adores""** (literally ""I adore you"")  
+
+The most common and natural way to say it is simply **""Je t'aime""** or **""Je vous aime""**, depending on the gender of the speaker.",76.41
+8,Is 3.12 larger than 3.9?,Comparison,"
+Is 3.12 larger than 3.9?
+
+<think>
+
+</think>
+
+To determine whether \( 3.12 \) is larger than \( 3.9 \), let's compare the two numbers step by step.
+
+1. **Align the Decimal Points:**
+   
+   It's easier to compare if both numbers have the same number of decimal places. We can rewrite \( 3.12 \) as \( 3.120 \) to match the two decimal places of \( 3.9 \).
+
+2. **Compare the Whole Numbers:**
+   
+   - \( 3.120 \) has a whole number part of \( 3 \).
+   - \( 3.9 \) also has a whole number part of \( 3 \).
+   
+   Since the whole numbers are equal, we move to the decimal places.
+
+3. **Compare the Decimal Places:**
+   
+   - The first decimal place of \( 3.120 \) is \( 1 \).
+   - The first decimal place of \( 3.9 \) is \( 9 \).
+   
+   Since \( 1 < 9 \), the number \( 3.120 \) is smaller than \( 3.9 \).
+
+**Final Answer:**
+\[
+\boxed{\text{No, } 3.12 \text{ is not larger than } 3.9}
+\]",154.75
