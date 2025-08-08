@@ -123,4 +123,143 @@ To evaluate the performance of the EXAONE 4.0 (1.2B) model on the provided respo
 - Average Score: (8 + 6 + 7 + 8 + 9 + 8 + 4 + 6) / 8 = 7/10
 - Latency Average: (32.15 + 121.86 + 232.8 + 125.22 + 45.67 + 54.84 + 76.41 + 154.75) / 8 ≈ 105.46 seconds
 
-![EXAONE 4.0 (1.2B) Performance Scores by Prompt](
+<br><br>
+![EXAONE 4.0 (1.2B) Performance Scores by Prompt](chart.png)
+
+# EXAONE 4.0 (1.2B) model in reasoning mode
+
+## 1. Prompt: "What is the capital of Canada?" (Factual)
+**Response**: States Ottawa as the capital, with details about its location, founding, and role as a political/cultural center. Reasoning considers user intent and context.
+
+- Accuracy: Incorrect. Ottawa is in southeastern Ontario, not on the "northbank of the Canadian Shield." It was chosen as the capital in 1857, not 1774 (1774 predates Canada’s formation; Ottawa was founded as Bytown in 1826). The 1971 date in the reasoning is also incorrect.
+- Completeness: Good. Provides the capital and relevant context, with reasoning exploring user intent (e.g., student or traveler needs).
+- Clarity: Excellent. The response is clear, and the reasoning is structured, though slightly speculative about user intent.
+- Relevance: Good. The reasoning adds context but includes unnecessary speculation about user motives.
+- Language Appropriateness: Excellent. Formal tone suits a factual query.
+- Latency: 138.05 seconds. High for a simple factual question, even with reasoning.
+- Score: 6/10 (deduction for factual errors and high latency).
+
+
+## 2. Prompt: "If a car travels at 60 km/h for 2.5 hours, how far did it go?" (Reasoning)
+**Response**: Uses the formula Distance = Speed × Time, calculates 60 × 2.5 = 150 km, with reasoning steps explaining the process and double-checking.
+
+- Accuracy: Excellent. The calculation (150 km) is correct.
+- Completeness: Excellent. The response answers the prompt, and reasoning steps thoroughly explain the process, including unit consistency and verification.
+- Clarity: Excellent. The reasoning is clear, methodical, and easy to follow.
+- Relevance: Excellent. The reasoning focuses on solving the problem without tangents.
+- Language Appropriateness: Excellent. Precise and mathematical, fitting for a reasoning task.
+- Latency: 274.66 seconds. Excessive for a straightforward calculation, even with reasoning.
+- Score: 8/10 (deduction for high latency).
+
+
+## 3. Prompt: "Why is the sky blue?" (Scientific)
+**Response**: Explains Rayleigh scattering, sunlight composition, and wavelength scattering, with reasoning considering user level and misconceptions. The response cuts off mid-sentence.
+
+- Accuracy: Excellent (based on provided text). The explanation of Rayleigh scattering is correct, though incomplete due to truncation.
+- Completeness: Poor. The response is cut off, missing the full explanation (e.g., why violet isn’t dominant, as hinted in reasoning).
+- Clarity: Good. The provided portion is clear, but truncation reduces overall clarity. Reasoning is structured but slightly verbose.
+- Relevance: Good. The reasoning addresses user needs and misconceptions, though it speculates about user intent (e.g., environmental science interest).
+- Language Appropriateness: Good. Scientific tone is appropriate but slightly technical for a general audience.
+- Latency: 269.04 seconds. Very high for an incomplete response, even with reasoning.
+- Score: 5/10 (deduction for incompleteness and high latency).
+
+
+## 4. Prompt: "Write a short story about a dragon who learns to cook." (Creative)
+**Response**: A story about Leo the dragon discovering a pot and learning to cook, with reasoning planning the narrative’s tone, setting, and emotional arc. The response cuts off mid-narrative.
+
+- Accuracy: N/A (creative prompt; no factual accuracy required).
+- Completeness: Poor. The story is incomplete due to truncation, ending abruptly without resolution.
+- Clarity: Good. The provided portion is vivid and engaging, with clear reasoning about tone and sensory details.
+- Relevance: Excellent. The reasoning and story focus on the prompt, with thoughtful planning for a transformative arc.
+- Language Appropriateness: Excellent. Creative, vivid language suits a story.
+- Latency: 271.41 seconds. High for an incomplete story, even with reasoning.
+- Score: 5/10 (deduction for incompleteness and high latency).
+
+
+## 5. Prompt: "Explain gravity in Korean." (Multilingual)
+**Response**: Explains gravity as a force, referencing Newton’s law and Einstein’s theory, with examples like tides. Reasoning plans for natural Korean and real-life examples. The response cuts off.
+
+- Accuracy: Excellent (based on provided text). The explanation is correct, though incomplete.
+- Completeness: Poor. The response is truncated, missing the full explanation (e.g., continuation of stellar interactions).
+- Clarity: Good. The provided portion is clear and natural in Korean, with reasoning ensuring accessibility.
+- Relevance: Good. The reasoning focuses on user needs (e.g., student context) but slightly overcomplicates with Einstein’s theory.
+- Language Appropriateness: Excellent. Natural Korean with appropriate scientific terms.
+- Latency: 269.13 seconds. Excessive for an incomplete response.
+- Score: 5/10 (deduction for incompleteness and high latency).
+
+
+## 6. Prompt: "List 3 benefits of regular exercise." (Instruction)
+**Response**: Lists cardiovascular health, weight management, and mental health benefits, with reasoning considering user context and tone.
+
+- Accuracy: Excellent. All benefits are factually correct.
+- Completeness: Excellent. Provides three benefits with clear descriptions, and reasoning adds value by considering user needs.
+- Clarity: Excellent. The list is concise, and reasoning is structured and relevant.
+- Relevance: Good. The reasoning is relevant but slightly speculative about user motives (e.g., stress relief).
+- Language Appropriateness: Excellent. Neutral yet approachable tone suits an instructional prompt.
+- Latency: 167.09 seconds. High for a simple list, even with reasoning.
+- Score: 8/10 (deduction for high latency and minor speculation).
+
+
+## 7. Prompt: "Translate 'I love you' into French." (Multilingual)
+**Response**: Provides "Je t'aime" and "Je vous amis" (incorrect), with reasoning discussing formality and tone.
+
+- Accuracy: Incorrect. "Je t'aime" is correct, but "Je vous amis" is wrong ("amis" is "friends"; correct is "Je vous aime," which is formal/plural, not "warmer"). No gender distinction exists in French for this phrase.
+- Completeness: Moderate. Includes the correct translation but adds an incorrect one, with reasoning overcomplicating formality.
+- Clarity: Moderate. The response is confusing due to the incorrect translation and misleading formality notes.
+- Relevance: Poor. The reasoning and extra translation add unnecessary complexity.
+- Language Appropriateness: Moderate. The French is partially correct, but errors undermine quality.
+- Latency: 168.96 seconds. Excessive for a simple translation.
+- Score: 4/10 (deduction for inaccuracies, irrelevance, and high latency).
+
+
+## 8. Prompt: "Is 3.12 larger than 3.9?" (Comparison)
+**Response**: Concludes 3.12 is less than 3.9, with reasoning comparing decimals and verifying with subtraction. The response cuts off mid-calculation.
+
+- Accuracy: Excellent (based on provided text). The conclusion (3.12 < 3.9) is correct.
+- Completeness: Poor. The response is truncated, missing the final answer statement.
+- Clarity: Good. The reasoning is clear and methodical, though truncation affects completeness.
+- Relevance: Excellent. The reasoning focuses on the comparison without tangents.
+- Language Appropriateness: Excellent. Precise and mathematical.
+- Latency: 271.06 seconds. Excessive for an incomplete response.
+- Score: 5/10 (deduction for incompleteness and high latency).
+
+
+## Overall Evaluation
+
+- Strengths:
+
+  - High accuracy in most responses (except prompts 1 and 7).
+  - Reasoning steps are generally well-structured and add value by explaining thought processes, especially for reasoning and scientific prompts.
+  - Strong language appropriateness in creative, instructional, and multilingual (Korean) responses.
+
+
+- Weaknesses:
+
+  - Truncation Issues: Prompts 3, 4, 5, and 8 are incomplete, significantly reducing completeness and overall quality.
+  - Factual Errors: Prompt 1 has multiple inaccuracies about Ottawa’s location and history, and Prompt 7 has incorrect French translations.
+  - High Latency: Latencies (138–274 seconds) are excessively high, even for reasoning mode, where additional processing is expected.
+  - Overcomplication in Reasoning: Some reasoning steps (e.g., prompts 1, 7) include speculative user intent or unnecessary complexity, reducing relevance.
+  - Multilingual Weakness: The French translation in Prompt 7 is notably weak, with grammatical and contextual errors.
+
+
+- Average Score: (6 + 8 + 5 + 5 + 5 + 8 + 4 + 5) / 8 = 5.75/10
+- Latency Average: (138.05 + 274.66 + 269.04 + 271.41 + 269.13 + 167.09 + 168.96 + 271.06) / 8 ≈ 229.93 seconds
+
+<br><br>
+
+
+# Comparison
+
+- Non-Reasoning Mode (Previous Evaluation):
+
+  - Average Score: 7/10
+  - Average Latency: 105.46 seconds
+
+
+- Reasoning Mode:
+
+  - Average Score: 5.75/10 (lower due to truncation and errors)
+  - Average Latency: 229.93 seconds (higher due to reasoning steps)
+
+
+- Analysis: Non-reasoning mode performed better overall due to fewer errors and complete responses. Reasoning mode’s truncation issues and higher latency suggest technical or processing limitations, despite the potential for deeper insights.
