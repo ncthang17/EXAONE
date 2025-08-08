@@ -122,3 +122,5 @@ To evaluate the performance of the EXAONE 4.0 (1.2B) model on the provided respo
 
 - Average Score: (8 + 6 + 7 + 8 + 9 + 8 + 4 + 6) / 8 = 7/10
 - Latency Average: (32.15 + 121.86 + 232.8 + 125.22 + 45.67 + 54.84 + 76.41 + 154.75) / 8 ≈ 105.46 seconds
+
+![EXAONE 4.0 (1.2B) Performance Scores by Prompt](
