@@ -247,6 +247,7 @@ To evaluate the performance of the EXAONE 4.0 (1.2B) model on the provided respo
 
 <br><br>
 
+![EXAONE 4.0 (1.2B) Performance Scores by Prompt](chart_r.png)
 
 # Comparison
 
