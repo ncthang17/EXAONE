@@ -1,3 +1,9 @@
+*For English, please refer to "README.md" file*.
+
+*실행 코드는 이 [링크](https://colab.research.google.com/drive/1sTKJxoWf-vgSdFtm-uJjXToL3xIYvc8G?usp=sharing) 또는 "test_llm.py" 참고 부탁드립니다.*
+
+***면책 조항***: 이는 다음 여섯 개의 프롬프트에 대한 응답을 기반으로 한 개인적인 평가에 기초합니다. 따라서 결과는 포괄적이지 않을 수 있으며, 완전히 정확하지 않을 수 있고 편견이 포함될 수 있습니다.
+
 # 소개
 EXAONE 4.0 (1.2B) 모델의 성능을 제공된 응답을 통해 평가하기 위해, 정확성, 완전성, 명확성, 관련성, 언어 적합성, 지연 시간이라는 포괄적인 기준을 사용해 응답을 평가하겠습니다.
 
