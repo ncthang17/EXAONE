@@ -1,3 +1,4 @@
+*한국어로 readme_kr.md 파일 참고 부탁드립니다*
 # Introduction
 To evaluate the performance of the EXAONE 4.0 (1.2B) model on the provided response, I'll assess the responses using a comprehensive set of criteria: accuracy, completeness, clarity, relevance, language appropriateness, and latency. 
 
